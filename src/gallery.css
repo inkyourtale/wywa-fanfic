@@ -1,0 +1,50 @@
+.gallery-page { min-height: 100%; padding: 65px 20px 44px; background: #faf9f6; color: #242627; }
+.gallery-page button:focus-visible, .gallery-viewer button:focus-visible { outline: 3px solid #007aff; outline-offset: 4px; }
+.gallery-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 26px; }
+.gallery-eyebrow { color: #92928d; font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+.gallery-heading h1 { font-size: 35px; letter-spacing: -1.5px; margin: 5px 0 0; line-height: 1.1; }
+.gallery-monogram { background: #ebe8e1; width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; color: #81796e; font-size: 19px; }
+.gallery-section { margin-top: 27px; }
+.gallery-section-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 13px; }
+.gallery-section-heading h2 { margin: 0; font-size: 21px; letter-spacing: -.6px; }
+.gallery-section-heading span { font-size: 11px; color: #989890; }
+.gallery-folders { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.gallery-folder { text-align: left; padding: 15px; background: #eeede7; border-radius: 17px; }
+.gallery-folder-icon { display: block; width: 38px; height: 28px; border-radius: 4px 7px 7px 7px; background: #bccbd8; margin: 9px 0 16px; position: relative; }
+.gallery-folder-icon:before { content: ''; position: absolute; top: -5px; left: 0; width: 18px; height: 7px; border-radius: 4px 4px 0 0; background: inherit; }
+.gallery-folder:nth-child(2) .gallery-folder-icon { background: #cabca9; }
+.gallery-folder b { display: block; font-size: 14px; font-weight: 600; }
+.gallery-folder small { display: block; margin-top: 4px; font-size: 11px; color: #898981; }
+.gallery-favourite { width: 100%; display: flex; align-items: center; gap: 14px; background: #f0e7e5; border-radius: 18px; padding: 12px; text-align: left; }
+.gallery-favourite-cover { display: grid; place-items: center; width: 67px; height: 72px; flex: none; overflow: hidden; border-radius: 12px; background: #e7d2cf; font-size: 27px; color: #b86867; }
+.gallery-favourite-cover img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-favourite b { display: block; font-size: 15px; font-weight: 600; }
+.gallery-favourite small { display: block; margin-top: 6px; font-size: 11px; color: #947977; line-height: 1.5; }
+.gallery-favourite > span:last-child { margin-left: auto; padding-right: 5px; color: #ad8b87; font-size: 22px; }
+.gallery-collections { display: grid; grid-template-columns: 1fr 1fr; gap: 17px 12px; }
+.gallery-collection { text-align: left; min-width: 0; }
+.gallery-cover { position: relative; aspect-ratio: 1.1; overflow: hidden; border-radius: 15px; background: #e5e1d9; display: block; }
+.gallery-cover img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .25s; }
+.gallery-collection:active img { transform: scale(1.04); }
+.gallery-cover:after { content: ''; position: absolute; inset: 50% 0 0; background: linear-gradient(transparent,#0004); }
+.gallery-cover span { position: absolute; bottom: 10px; right: 10px; z-index: 1; color: white; font-size: 10px; background: #0003; padding: 4px 7px; border-radius: 7px; }
+.gallery-collection b { display: block; margin: 9px 2px 0; font-size: 13px; font-weight: 600; }
+.gallery-collection small { display: block; margin: 4px 2px 0; color: #96958d; font-size: 10px; }
+.gallery-back { color: #798b9c; font-size: 15px; margin-bottom: 20px; }
+.gallery-album-title { font-size: 31px; margin: 0 0 6px; letter-spacing: -1px; }
+.gallery-album-count { color: #92928d; font-size: 12px; margin: 0 0 24px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 4px; margin: 0 -14px; }
+.gallery-thumb { position: relative; aspect-ratio: 1; overflow: hidden; background: #e5e1d9; border-radius: 4px; }
+.gallery-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.gallery-thumb span { position: absolute; bottom: 6px; right: 7px; color: white; font-size: 14px; text-shadow: 0 1px 3px #0008; }
+.gallery-empty { padding: 50px 24px; text-align: center; color: #92928d; font-size: 14px; line-height: 1.7; }
+.gallery-empty span { display: block; font-size: 37px; color: #bc8b87; margin-bottom: 12px; }
+.gallery-viewer { position: absolute; inset: 0; background: #000; color: white; overflow: hidden; }
+.gallery-viewer > img { position: absolute; top: 114px; left: 0; width: 100%; height: calc(100% - 220px); object-fit: contain; }
+.gallery-viewer-header { position: absolute; top: 61px; left: 18px; right: 18px; display: flex; justify-content: space-between; align-items: center; }
+.gallery-viewer-header button { font-size: 28px; width: 38px; height: 38px; border-radius: 50%; background: #ffffff20; }
+.gallery-viewer-header span { color: #ccc; font-size: 12px; }
+.gallery-viewer-actions { position: absolute; left: 28px; right: 28px; bottom: 42px; display: flex; align-items: center; justify-content: space-between; }
+.gallery-viewer-actions button { min-width: 44px; min-height: 44px; font-size: 27px; }
+.gallery-viewer-actions button[aria-pressed="true"] { color: #ef858f; }
+.gallery-viewer-actions button:disabled { opacity: .25; cursor: default; }

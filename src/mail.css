@@ -1,0 +1,56 @@
+.mail-app { position:absolute; inset:0; overflow:hidden; color:#293748; background:#f7f8fa; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif; }
+.mail-top { position:absolute; top:54px; left:0; right:0; height:57px; padding:0 20px; display:flex; align-items:center; justify-content:space-between; background:#f7f8faed; z-index:2; }
+.mail-wordmark { font-size:20px; letter-spacing:-.6px; font-weight:650; }
+.mail-profile { width:32px; height:32px; display:grid; place-items:center; background:#e3eaf1; border-radius:50%; color:#6c839b; font-size:11px; font-weight:600; }
+.mail-top button { color:#688cae; font-size:14px; }
+.mail-top .mail-compose-button { display:grid; place-items:center; width:36px; height:36px; background:#e7eef5; border-radius:11px; }
+.mail-app svg { width:21px; height:21px; display:block; }
+.mail-content { position:absolute; inset:111px 0 79px; overflow-y:auto; padding:18px 18px 30px; scrollbar-width:none; overscroll-behavior:contain; }
+.mail-heading { display:flex; align-items:center; justify-content:space-between; margin:0 1px 20px; }
+.mail-heading p { font-size:10px; text-transform:uppercase; letter-spacing:1.7px; color:#a0aab5; margin:0 0 6px; }
+.mail-heading h1 { font-size:34px; letter-spacing:-1.3px; margin:0; }
+.mail-unread-count { display:grid; place-items:center; width:37px; height:37px; background:#e5edf6; color:#7594b3; font-size:14px; border-radius:50%; }
+.mail-search { display:flex; align-items:center; gap:9px; padding:12px; background:#edf0f4; border-radius:13px; color:#a0abb5; margin-bottom:17px; }
+.mail-search input { font:inherit; font-size:13px; min-width:0; width:100%; outline:0; border:0; color:#435569; background:none; }
+.mail-filters { display:flex; gap:8px; margin-bottom:22px; }
+.mail-filters button { font-size:11px; color:#94a0ac; border:1px solid #e3e8ed; padding:8px 15px; border-radius:20px; background:#fff; }
+.mail-filters button[aria-pressed="true"] { background:#6d91b5; color:white; border-color:#6d91b5; }
+.mail-list-heading { display:flex; justify-content:space-between; color:#a0aab4; font-size:10px; margin:0 4px 11px; }
+.mail-card { display:flex; align-items:flex-start; gap:11px; background:#fff; border:1px solid #edf0f4; border-radius:17px; padding:16px 12px; margin-bottom:11px; box-shadow:0 3px 12px #4e657605; }
+.mail-sender-avatar { width:38px; height:38px; border-radius:12px; display:grid; place-items:center; background:var(--sender-bg,#edf0f4); color:var(--sender-ink,#7e8f9f); font-weight:600; font-size:15px; flex:none; }
+.mail-open { flex:1; min-width:0; display:block; text-align:left; }
+.mail-card-meta { display:flex; justify-content:space-between; gap:7px; align-items:center; margin-bottom:7px; }
+.mail-card-meta b { font-size:11px; font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.mail-card-meta time { font-size:9px; color:#a1abb6; flex:none; }
+.mail-card h2 { font-size:13px; font-weight:500; line-height:1.5; margin:0 0 7px; }
+.mail-card p { font-size:11px; line-height:1.65; color:#a1aab4; margin:0; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.mail-card.is-unread h2,.mail-card.is-unread .mail-card-meta b { font-weight:700; color:#34495f; }
+.mail-status { width:16px; flex:none; display:flex; flex-direction:column; align-items:center; gap:17px; padding-top:5px; }
+.mail-dot { width:5px; height:5px; border-radius:50%; background:#7aa6cc; display:block; }
+.mail-status button { color:#c5cdd4; font-size:17px; }
+.mail-status button[aria-pressed="true"] { color:#d8b46d; }
+.mail-empty { padding:44px 24px; text-align:center; color:#9aa5b1; font-size:12px; line-height:1.8; }
+.mail-empty b { display:block; font-size:19px; color:#637589; margin-bottom:8px; }
+.mail-local-note { font-size:10px; color:#a9b2bc; line-height:1.7; margin:24px 8px 0; text-align:center; }
+.mail-nav { position:absolute; bottom:0; left:0; right:0; height:79px; padding:8px 20px 28px; display:flex; align-items:center; justify-content:space-around; background:#ffffffd9; border-top:1px solid #e9edf1; backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px); z-index:2; }
+.mail-nav button { display:flex; flex-direction:column; align-items:center; gap:4px; color:#a3adb8; min-width:55px; font-size:9px; }
+.mail-nav button[aria-current="page"] { color:#688eaf; }
+.mail-reader { background:#fff; }
+.mail-reader .mail-top { background:#ffffffed; }
+.mail-subject { font-size:25px; line-height:1.4; letter-spacing:-.6px; margin:5px 1px 24px; }
+.mail-reader-sender { display:flex; gap:11px; align-items:center; padding-bottom:21px; border-bottom:1px solid #edf0f4; }
+.mail-reader-sender b { font-size:12px; display:block; margin-bottom:6px; }
+.mail-reader-sender small { font-size:10px; color:#9da8b4; display:block; line-height:1.7; }
+.mail-message-body { margin:23px 1px 30px; font-size:14px; color:#667789; line-height:1.9; overflow-wrap:anywhere; }
+.mail-reader .mail-nav button { font-size:10px; }
+.mail-reader .mail-nav button[aria-pressed="true"] { color:#c8a55f; }
+.mail-reader .mail-nav button[aria-pressed="true"] svg { fill:#f5ead2; }
+.mail-compose-form { display:flex; flex-direction:column; min-height:100%; }
+.mail-compose-field { display:flex; gap:12px; padding:15px 2px; border-bottom:1px solid #e3e8ed; align-items:center; }
+.mail-compose-field label { color:#9ca8b5; font-size:12px; min-width:45px; }
+.mail-compose-field input { flex:1; min-width:0; font:inherit; font-size:14px; color:#435569; background:none; border:0; outline:0; }
+.mail-compose-form textarea { display:block; width:100%; min-height:220px; flex:1; resize:vertical; padding:23px 2px; font:inherit; font-size:14px; line-height:1.8; border:0; outline:0; background:none; color:#435569; }
+.mail-draft-save { background:#6d91b5; color:white; padding:13px 17px; border-radius:12px; font-size:13px; font-weight:600; }
+.mail-compose-footer { position:absolute; bottom:0; left:0; right:0; padding:12px 18px 31px; background:#f7f8fa; border-top:1px solid #e3e8ed; }
+.mail-compose-footer button { width:100%; }
+.mail-app button:focus-visible,.mail-app input:focus-visible,.mail-app textarea:focus-visible { outline:2px solid #7da1c0; outline-offset:3px; }

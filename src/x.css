@@ -1,0 +1,84 @@
+.x-screen { position:absolute; inset:0; overflow:hidden; background:#fff; color:#14171a; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif; }
+.x-screen svg { width:22px; height:22px; display:block; }
+.x-screen button:focus-visible,.x-screen input:focus-visible,.x-screen textarea:focus-visible { outline:2px solid #1d9bf0; outline-offset:3px; }
+.x-header { position:absolute; top:54px; left:0; right:0; height:53px; display:flex; align-items:center; justify-content:space-between; padding:0 18px; border-bottom:1px solid #eff3f4; background:#fffffff2; z-index:2; }
+.x-header h1 { font-size:19px; margin:0; letter-spacing:-.5px; }
+.x-logo { font-size:28px; line-height:1; }
+.x-avatar { width:38px; height:38px; object-fit:cover; border-radius:50%; flex:none; }
+.x-header .x-avatar { width:30px; height:30px; }
+.x-header .x-header-compose { color:#536471; }
+.x-main { position:absolute; inset:107px 0 79px; overflow-y:auto; scrollbar-width:none; overscroll-behavior:contain; }
+.x-tabs { display:flex; position:sticky; top:0; background:#fffffff0; border-bottom:1px solid #eff3f4; backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); z-index:1; }
+.x-tabs button { flex:1; padding:17px 5px; position:relative; color:#77838c; font-size:13px; font-weight:600; }
+.x-tabs button[aria-selected="true"] { color:#151a1e; }
+.x-tabs button[aria-selected="true"]:after { content:''; position:absolute; width:48px; height:4px; background:#1d9bf0; border-radius:4px; bottom:0; left:calc(50% - 24px); }
+.x-post { display:flex; gap:10px; padding:16px 15px 12px; border-bottom:1px solid #eff3f4; }
+.x-post-user-avatar { align-self:flex-start; }
+.x-post-body { flex:1; min-width:0; }
+.x-post-heading { display:flex; align-items:center; gap:4px; font-size:12px; margin:0 0 5px; min-width:0; }
+.x-post-heading button { text-align:left; font-weight:700; max-width:47%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.x-post-heading span { color:#7d8a93; font-size:10px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.x-post-text { font-size:13px; line-height:1.65; margin:0 0 10px; white-space:pre-wrap; overflow-wrap:anywhere; }
+.x-media { display:block; width:100%; border-radius:14px; overflow:hidden; border:1px solid #eff3f4; margin:7px 0 11px; }
+.x-media img { display:block; width:100%; max-height:330px; object-fit:cover; background:#eff3f4; }
+.x-post-actions { display:flex; justify-content:space-between; gap:6px; color:#84919a; }
+.x-post-actions button { display:flex; align-items:center; gap:5px; min-height:29px; min-width:32px; font-size:10px; }
+.x-post-actions svg { width:17px; height:17px; }
+.x-post-actions .x-liked { color:#e34782; }
+.x-post-actions .x-liked svg { fill:currentColor; }
+.x-post-actions .x-reposted { color:#00a276; }
+.x-post-actions .x-bookmarked { color:#1d9bf0; }
+.x-post-actions .x-bookmarked svg { fill:currentColor; }
+.x-nav { position:absolute; left:0; right:0; bottom:0; height:79px; padding:8px 13px 28px; display:flex; align-items:center; justify-content:space-between; border-top:1px solid #eff3f4; background:#ffffffed; backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); z-index:2; }
+.x-nav button { width:45px; height:34px; display:grid; place-items:center; }
+.x-nav button[aria-current="page"] { color:#1d9bf0; }
+.x-nav img { width:25px; height:25px; border-radius:50%; object-fit:cover; }
+.x-fab { position:absolute; bottom:97px; right:19px; width:52px; height:52px; display:grid; place-items:center; background:#1d9bf0; color:white; border-radius:50%; box-shadow:0 4px 14px #1d9bf047; z-index:2; }
+.x-search { display:flex; align-items:center; gap:10px; background:#f0f3f5; border-radius:24px; padding:12px 15px; margin:16px; color:#7a8993; }
+.x-search input { background:none; border:0; outline:0; flex:1; min-width:0; font:inherit; font-size:13px; color:#14171a; }
+.x-page-title { font-size:23px; margin:23px 18px 7px; letter-spacing:-.6px; }
+.x-subtitle { color:#7d8a93; font-size:11px; margin:0 18px 21px; line-height:1.6; }
+.x-trend { display:block; width:100%; padding:15px 19px; text-align:left; border-bottom:1px solid #eff3f4; }
+.x-trend small { font-size:10px; color:#8b969e; display:block; margin-bottom:5px; }
+.x-trend b { display:block; font-size:14px; }
+.x-empty { padding:48px 27px; color:#7c8993; line-height:1.7; text-align:center; font-size:13px; }
+.x-empty b { display:block; color:#20272c; font-size:21px; margin-bottom:8px; }
+.x-local-note { padding:20px; font-size:10px; color:#95a0a7; text-align:center; line-height:1.7; }
+.x-profile-cover { height:107px; background:linear-gradient(120deg,#ccdce8,#a9bdc9 48%,#e0e3dc); }
+.x-profile { padding:0 18px 20px; }
+.x-profile-top { display:flex; justify-content:space-between; align-items:flex-end; margin-top:-35px; position:relative; }
+.x-profile-top > img { width:76px; height:76px; border-radius:50%; border:4px solid white; object-fit:cover; }
+.x-pill { border:1px solid #d4dce1; padding:9px 16px; font-size:12px; font-weight:650; border-radius:24px; background:#fff; }
+.x-pill.is-following { color:#1d9bf0; border-color:#9fd3f5; }
+.x-profile h2 { font-size:21px; margin:12px 0 3px; letter-spacing:-.6px; }
+.x-profile-handle { font-size:12px; color:#87949e; margin:0 0 12px; }
+.x-profile-bio { font-size:13px; line-height:1.6; white-space:pre-wrap; overflow-wrap:anywhere; margin:0 0 13px; }
+.x-profile-stats { display:flex; gap:17px; font-size:11px; color:#84919a; }
+.x-profile-stats b { color:#252d33; }
+.x-profile-label { text-align:center; padding:13px; border-bottom:1px solid #eff3f4; font-size:13px; font-weight:650; }
+.x-modal { position:absolute; inset:54px 0 0; z-index:5; background:#0006; display:flex; justify-content:flex-end; flex-direction:column; }
+.x-sheet { display:flex; flex-direction:column; max-height:95%; padding:0 17px 32px; border-radius:22px 22px 0 0; background:#fff; overflow:hidden; }
+.x-sheet-header { display:flex; justify-content:space-between; align-items:center; padding:18px 0; border-bottom:1px solid #eff3f4; flex:none; }
+.x-sheet-header h2 { font-size:17px; margin:0; }
+.x-sheet-header button { font-size:24px; color:#89949d; width:30px; height:30px; }
+.x-sheet-body { overflow-y:auto; padding:15px 0 0; min-height:0; }
+.x-compose-text { display:block; width:100%; border:0; resize:vertical; min-height:115px; padding:10px 0; font:inherit; font-size:17px; line-height:1.6; outline:none; }
+.x-compose-footer { display:flex; align-items:center; justify-content:space-between; gap:10px; border-top:1px solid #eff3f4; margin-top:12px; padding-top:12px; }
+.x-compose-footer output { color:#8b979f; font-size:11px; }
+.x-submit { padding:10px 19px; background:#1d9bf0; color:white; font-size:12px; font-weight:650; border-radius:23px; }
+.x-photo-picker { display:flex; gap:7px; overflow-x:auto; padding:8px 0; scrollbar-width:none; }
+.x-photo-picker button { flex:none; width:55px; height:55px; border:2px solid transparent; border-radius:9px; overflow:hidden; }
+.x-photo-picker button[aria-pressed="true"] { border-color:#1d9bf0; }
+.x-photo-picker img { width:100%; height:100%; object-fit:cover; display:block; }
+.x-picker-label { display:flex; justify-content:space-between; font-size:11px; color:#85939d; margin:7px 0; }
+.x-picker-label button { color:#1d9bf0; }
+.x-reply { display:flex; gap:10px; margin:16px 0; font-size:12px; line-height:1.6; }
+.x-reply p { margin:0; white-space:pre-wrap; overflow-wrap:anywhere; min-width:0; }
+.x-reply b { display:block; margin-bottom:4px; }
+.x-reply-form { display:flex; gap:9px; border-top:1px solid #eff3f4; padding-top:14px; margin-top:12px; }
+.x-reply-form input { border:0; background:#f3f5f7; border-radius:20px; padding:11px; min-width:0; flex:1; font:inherit; font-size:12px; }
+.x-lightbox { position:absolute; inset:0; background:#121212; z-index:6; }
+.x-lightbox > img { position:absolute; top:108px; left:0; width:100%; height:calc(100% - 180px); object-fit:contain; }
+.x-lightbox button { position:absolute; right:16px; top:65px; color:white; font-size:28px; width:36px; height:36px; border-radius:50%; background:#ffffff20; }
+#phone:has(#app.on .x-lightbox) #sb { color:white; }
+#phone:has(#app.on .x-lightbox) #hi { background:white; }
