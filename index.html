@@ -21,9 +21,9 @@
     <div id="stage">
       <div id="phone">
         <div id="sb">
-          <span>2:21</span>
+          <span id="status-time">2:21</span>
           <div class="isl"></div>
-          <span class="flex items-center gap-1.5">
+          <button type="button" class="flex items-center gap-1.5 status-controls" aria-label="Open Control Centre" onclick="controlOpen()">
             <svg width="18" height="12" viewBox="0 0 18 12" fill="currentColor">
               <rect y="8" width="3" height="4" rx="1" />
               <rect x="5" y="5.5" width="3" height="6.5" rx="1" />
@@ -60,17 +60,17 @@
                 opacity=".5"
               />
             </svg>
-          </span>
+          </button>
         </div>
 
         <section id="home" class="scr"></section>
 
         <section id="lock" class="scr">
-          <div class="lk" data-layout-style="phone-layout-1">
+          <div id="lock-date" class="lk" data-layout-style="phone-layout-1">
             Friday, 29 Mar
           </div>
           <div
-            class="lk"
+            id="lock-time" class="lk"
             data-layout-style="phone-layout-2"
           >
             2:21<sup
@@ -135,6 +135,7 @@
       </div>
     </div>
 
+    <script src="./social-content.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
